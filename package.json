@@ -1,0 +1,67 @@
+{
+  "name": "@hailbytes/cvss-calc",
+  "version": "1.0.1",
+  "description": "Zero-dependency CVSS v3.1 and v4.0 calculator. Parse and score vulnerability vectors as a library or web component.",
+  "type": "module",
+  "license": "MIT",
+  "author": "HailBytes, LLC",
+  "keywords": [
+    "cvss",
+    "cvss-calculator",
+    "cvss3",
+    "cvss4",
+    "vulnerability-scoring",
+    "cybersecurity",
+    "vulnerability-management",
+    "nvd",
+    "security-tools",
+    "hailbytes"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HailBytes/cvss-calc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/HailBytes/cvss-calc/issues"
+  },
+  "homepage": "https://hailbytes.com/asm",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./element": {
+      "import": "./dist/element.js",
+      "types": "./dist/element.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:coverage": "vitest run --coverage",
+    "prepublishOnly": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@vitest/coverage-v8": "^1.6.0",
+    "typescript": "^5.4.0",
+    "vitest": "^1.6.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}
