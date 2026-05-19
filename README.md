@@ -3,6 +3,7 @@
 > Zero-dependency CVSS v3.1 and v4.0 calculator. Parse and score vulnerability vectors as a library or embedded web component — no network calls, no build step required.
 
 [![npm version](https://img.shields.io/npm/v/%40hailbytes%2Fcvss-calc.svg)](https://www.npmjs.com/package/@hailbytes/cvss-calc)
+[![npm downloads](https://img.shields.io/npm/dw/%40hailbytes%2Fcvss-calc.svg)](https://www.npmjs.com/package/@hailbytes/cvss-calc)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Zero deps](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](#)
 [![Bundle Size](https://img.shields.io/bundlephobia/minzip/%40hailbytes%2Fcvss-calc)](https://bundlephobia.com/package/@hailbytes/cvss-calc)
