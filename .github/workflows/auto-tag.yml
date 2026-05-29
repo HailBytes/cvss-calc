@@ -20,9 +20,19 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm install --include=dev
+
+      - name: Type check
+        run: npm run typecheck
 
       - name: Test
         run: npm test
+
+      - name: Build
+        run: npm run build
 
       - name: Tag HEAD with next patch version
         run: |
