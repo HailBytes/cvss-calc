@@ -52,7 +52,7 @@
     "prepublishOnly": "npm run build"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
+    "@types/node": "^26.6.6",
     "@vitest/coverage-v8": "^1.6.0",
     "typescript": "^5.4.0",
     "vitest": "^1.6.0"
